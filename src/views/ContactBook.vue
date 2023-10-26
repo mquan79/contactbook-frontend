@@ -70,7 +70,6 @@ export default {
                 return [name, email, address, phone].join("");
             });
         },
-        // Trả về các contact có chứa thông tin cần tìm kiếm.
         filteredContacts() {
             if (!this.searchText) return this.contacts;
             return this.contacts.filter((_contact, index) =>
